@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryan's Watchlist | My Watchlist</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Ryan's <span>Watchlist</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Welcome</a></li>
+        <li><a href="movies.html" class="active">My Watchlist</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Search</h2>
+      <form id="searchForm">
+        <div class="field">
+          <label for="searchText">Title</label>
+          <input type="text" id="searchText" placeholder="e.g. dark">
+        </div>
+        <div class="field">
+          <label for="searchStatus">Show</label>
+          <select id="searchStatus">
+            <option value="All">Watched and unwatched</option>
+            <option value="watched">Watched only</option>
+            <option value="unwatched">Unwatched only</option>
+          </select>
+        </div>
+        <button type="submit">Search</button>
+        <button type="button" id="showAllBtn" class="grey">Show all</button>
+      </form>
+      <p class="grey-text" id="searchMessage"></p>
+    </section>
+
+    <section>
+      <h2>Films and series</h2>
+      <p class="grey-text" id="summary"></p>
+      <div class="cards" id="movieCards"></div>
+    </section>
+
+    <section>
+      <h2>Delete a title</h2>
+      <form id="deleteForm">
+        <div class="field">
+          <label for="deleteChoice">Choose a film or series</label>
+          <select id="deleteChoice"></select>
+        </div>
+        <button type="submit">Delete</button>
+      </form>
+      <p class="success" id="deleteMessage"></p>
+    </section>
+
+    <section>
+      <h2>Add to the watchlist</h2>
+      <form id="addForm">
+        <div class="field">
+          <label for="title">Title</label>
+          <input type="text" id="title" placeholder="e.g. the godfather">
+        </div>
+
+        <div class="field">
+          <span class="label-text">Type</span>
+          <div class="choices">
+            <label><input type="radio" name="type" value="Film" checked> Film</label>
+            <label><input type="radio" name="type" value="Series"> Series</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <span class="label-text">Watched?</span>
+          <label><input type="checkbox" id="watched" checked> I've watched it</label>
+        </div>
+
+        <div class="watched-fields" id="watchedFields">
+          <div class="field">
+            <label for="rating">Rating</label>
+            <select id="rating">
+              <option value="5">★★★★★ (5)</option>
+              <option value="4">★★★★☆ (4)</option>
+              <option value="3">★★★☆☆ (3)</option>
+              <option value="2">★★☆☆☆ (2)</option>
+              <option value="1">★☆☆☆☆ (1)</option>
+            </select>
+          </div>
+
+          <div class="field review-field">
+            <label for="review">Short review</label>
+            <textarea id="review" rows="2" placeholder="What did you think?"></textarea>
+          </div>
+        </div>
+
+        <button type="submit">Add</button>
+      </form>
+      <p class="error" id="addError"></p>
+      <p class="success" id="addMessage"></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="footerYear"></span> Ryan Hancox - Website Development 2</p>
+    <p id="footerDate"></p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/movies.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryan's Watchlist | Welcome</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Ryan's <span>Watchlist</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Welcome</a></li>
+        <li><a href="movies.html">My Watchlist</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="row">
+      <div class="text-box">
+        <p id="greeting">Hello!</p>
+        <h1>Welcome to <span>Ryan's Watchlist</span></h1>
+        <p>
+          I'm Ryan Hancox, a 2nd year Creative Computing student. This website keeps track of
+          the films and TV series I've watched and the ones I still want to see.
+        </p>
+        <p>
+          Each film or series is stored as a JavaScript object with a title, type, whether I've
+          watched it, my rating and a short review. On the
+          <a href="movies.html">My Watchlist</a> page you can view, add, delete and search them.
+        </p>
+        <p class="grey-text" id="todayText"></p>
+      </div>
+
+      <div>
+        <img src="images/hero.svg" alt="A cinema screen with red curtains and seats" class="photo-img">
+      </div>
+    </section>
+
+    <section class="text-box">
+      <h2>What should I watch tonight?</h2>
+      <p id="randomTitle">Click the button and JavaScript will pick a title.</p>
+      <button id="randomBtn">Pick for me</button>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="footerYear"></span> Ryan Hancox - Website Development 2</p>
+    <p id="footerDate"></p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

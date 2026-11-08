@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #f0f4fa;
+  background-color: #0b1f3a;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a,
+.logo span,
+h1 span {
+  color: #ff6b81;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  border-bottom: 1px solid #2c4c7c;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  color: #f0f4fa;
+  text-decoration: none;
+}
+
+nav a.active {
+  color: #ff6b81;
+  font-weight: bold;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+section {
+  padding: 20px 0;
+}
+
+.text-box {
+  background-color: #13294b;
+  border: 1px solid #2c4c7c;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.grey-text {
+  color: #b8c4d6;
+}
+
+.row {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.row > div {
+  flex: 1 1 300px;
+}
+
+.photo-img {
+  width: 100%;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex: none;
+}
+
+button {
+  background-color: #c8102e;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button.grey {
+  background-color: #e6e6e6;
+  color: #222222;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: flex-end;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-field {
+  flex: 1 1 300px;
+}
+
+input,
+select,
+textarea {
+  padding: 6px;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.choices {
+  display: flex;
+  gap: 15px;
+}
+
+.watched-fields {
+  display: flex;
+  gap: 15px;
+  flex: 1 1 400px;
+}
+
+.hidden {
+  display: none;
+}
+
+.error {
+  color: #ff8095;
+}
+
+.success {
+  color: #7ee2a0;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #13294b;
+  border: 1px solid #2c4c7c;
+  padding: 10px 20px;
+}
+
+.card-left {
+  flex: 0 0 280px;
+}
+
+.card-right {
+  flex: 1 1 300px;
+}
+
+.card h3,
+.card p {
+  margin: 5px 0;
+}
+
+.stars {
+  color: #ffcc4d;
+}
+
+.question {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background-color: transparent;
+  color: #f0f4fa;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.answer {
+  display: none;
+  color: #b8c4d6;
+}
+
+.answer.show {
+  display: block;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  border-top: 1px solid #2c4c7c;
+  color: #b8c4d6;
+  font-size: 14px;
+}
