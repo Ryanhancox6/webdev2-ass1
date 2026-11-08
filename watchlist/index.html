@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- lets the page show special characters like ★ -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- makes the page fit phone screens -->
+  <title>Ryan's Watchlist | Welcome</title> <!-- text shown on the browser tab -->
+  <link rel="stylesheet" href="css/style.css"> <!-- the shared stylesheet for all pages -->
+</head>
+<body>
+
+  <!-- HEADER: the same on every page. class="active" marks the page we are on -->
+  <header>
+    <div class="logo">Ryan's <span>Watchlist</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Welcome</a></li>
+        <li><a href="movies.html">My Watchlist</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- INTRODUCTION: text on the left, image on the right -->
+    <section class="row">
+      <div class="text-box"> <!-- text-box = the box around the text (see style.css) -->
+        <p id="greeting">Hello!</p> <!-- home.js replaces this with Good morning/afternoon/evening -->
+        <h1>Welcome to <span>Ryan's Watchlist</span></h1>
+        <p>
+          I'm Ryan Hancox, a 2nd year Creative Computing student. This website keeps track of
+          the films and TV series I've watched and the ones I still want to see.
+        </p>
+        <p>
+          Each film or series is stored as a JavaScript object with a title, type, whether I've
+          watched it, my rating and a short review. On the
+          <a href="movies.html">My Watchlist</a> page you can view, add, delete and search them.
+        </p>
+        <p class="grey-text" id="todayText"></p> <!-- home.js puts today's date here -->
+      </div>
+
+      <!-- the image is in the images folder. The <div> keeps it in the Flexbox column -->
+      <div>
+        <img src="images/hero.svg" alt="A cinema screen with red curtains and seats" class="photo-img">
+      </div>
+    </section>
+
+    <!-- RANDOM PICK: home.js picks a random title when the button is clicked -->
+    <section class="text-box">
+      <h2>What should I watch tonight?</h2>
+      <p id="randomTitle">Click the button and JavaScript will pick a title.</p>
+      <button id="randomBtn">Pick for me</button>
+    </section>
+
+  </main>
+
+  <!-- FOOTER: the same on every page. common.js fills in the year and date -->
+  <footer>
+    <p>&copy; <span id="footerYear"></span> Ryan Hancox - Website Development 2</p>
+    <p id="footerDate"></p>
+  </footer>
+
+  <!-- Scripts go at the bottom so the HTML above has loaded first.
+       data.js must be first because home.js uses the movies array from it. -->
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
