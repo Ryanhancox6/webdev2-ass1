@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryan's Watchlist | About</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Ryan's <span>Watchlist</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Welcome</a></li>
+        <li><a href="movies.html">My Watchlist</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="row">
+      <img src="images/ryan.jpg" alt="Photo of Ryan Hancox" class="profile-img">
+
+      <div class="text-box">
+        <h2 id="fullName"></h2>
+        <p class="grey-text" id="courseInfo"></p>
+        <p>Hobbies:</p>
+        <ul id="hobbies"></ul>
+      </div>
+    </section>
+
+    <section class="text-box">
+      <h2>About the website</h2>
+      <p>
+        Ryan's Watchlist was built for Assignment One of Website Development 2 using HTML, CSS
+        and JavaScript. It has three pages: a welcome page, the My Watchlist page
+        where the data can be viewed, added to, deleted and searched, and this about page.
+      </p>
+      <p>
+        The data is an array of objects in js/data.js. It holds 15 films and TV series I've
+        watched or want to watch, from classics like Back to the Future and Jurassic Park to
+        series like Breaking Bad and The Office. Each object has a title, type (film or series),
+        whether I've watched it, my rating out of 5 and a short review.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="footerYear"></span> Ryan Hancox - Website Development 2</p>
+    <p id="footerDate"></p>
+  </footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/about.js"></script>
+</body>
+</html>
